@@ -1,0 +1,874 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+.header{
+    padding-top: 1rem;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+}
+.logo{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+}
+.profile{
+    display: none;
+}
+.details{
+    text-transform: capitalize;
+    display: flex;
+    margin-left: 61%;
+    margin-top: 1rem;
+}
+.logo img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 49%;
+    
+}
+.details details,button{
+    margin: 1rem;
+}
+.details button{
+    width: 6rem;
+    height: 2rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    border-radius: 9px;
+}
+.register{
+    background-color: rgb(2, 2, 114);
+    color: white;
+    border: none;
+}
+.register:hover{
+    background-color: rgb(5, 5, 59);
+}
+.login{
+    background-color: white;
+    border: 1px black solid;
+}
+.login:hover{
+    background-color: rgb(192, 191, 191);
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 24%;
+}
+.navbar ul li{
+    margin: 0 2.7% 0 2.7%;
+    color: #fff;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.navbar{
+    background-color: rgb(31, 31, 117);
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+}
+.navbar ul li:hover{
+    text-decoration: underline white 4px;
+}
+.close,.menue{
+    border-radius: 49%;
+    display: flex;
+    justify-content: left;
+    display: none;
+}
+/*adding responsiveness to header*/
+@media screen and (max-width:1290px) {
+    .details{
+        margin-left: 49%;
+    }
+    
+}
+@media screen and (max-width:1070px) {
+    .navbar ul {
+        display: block;
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 1.7rem;
+        margin-top: 2.7rem;
+        
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right:-27%;
+        width: 27%;
+        height: 100vh;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    .navbar ul li{
+        padding: 1.4rem 0 0 0;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+    .menue,.close{
+        display: block;
+        cursor: pointer;
+    }
+    .details{
+        display: none;
+    }
+    .menue{
+        position: absolute;
+        top: 2.7rem;
+        right: 2.4rem;
+    }
+    .logo{
+        box-shadow:  0px 4px 0px 1px rgba(51, 51, 51, 0.1);;
+    }
+    .logo img{
+        width: 5.9rem ;
+        height: 5.9rem;
+    }
+    .logo .profile{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        right: 7rem;
+        top: 2.7rem;
+    }
+}
+.content{
+    margin-top: 9.9rem;
+    display: flex;
+}
+.box1{
+    width: 24%;
+    height: 79vh;
+    margin-left: 7rem;
+    margin-top: 2.7rem;
+    background-color: rgba(189, 200, 219, 0.568);
+    border-radius: 4px;
+}
+.box1 h1{
+    padding: 2rem 0 0 1.4rem;
+    font-size: 1.7rem;
+
+}
+.box2{
+    margin: 1.4rem 1.7rem 2rem 1.7rem;
+    height: 78%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: scroll;
+    box-shadow: 7px 0px 2px 1px rgba(63, 63, 66, 0.2); 
+}
+.box2 a{
+    display: block;
+    padding: 0.8rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 740;
+    color: black;
+    text-transform: capitalize;
+}
+.content{
+    display: flex;
+}
+.slide{
+    box-sizing: border-box;
+    margin: 2rem 0 0 4rem;
+    width: 51rem;
+    display: flex;
+    flex-direction: column;
+    height: 14.8rem;
+    overflow: scroll;
+    box-shadow: 1px 1px 4px rgb(59, 59, 59);
+}
+
+.s1{
+    display: flex;
+    box-sizing: border-box;
+}
+.s1 img{
+    margin-left: 29%;
+}
+.s1 div{
+    margin-top: 7%;
+}
+.s1 div h1{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    line-height: 2rem;
+    word-spacing: 0.12rem;
+    margin-left: 1rem;
+}
+.s1 div p{
+    color: gray;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.12rem;
+    margin-left: 1rem;
+}
+.s1 div button{
+    background-color: blue;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.latestupdate{
+    margin-left: 2.4rem;
+    margin-top: 1rem;
+}
+.latestupdate p{
+    font-size: 1.7rem;
+    font-weight: 670;
+    text-transform: capitalize;
+    font-family: 'Source Serif Pro', serif;
+    margin-left: 1.8rem;
+}
+.view{
+    margin-left: 40rem;
+    position: relative;
+    top:-1.8rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 590;
+    color: rgb(92, 92, 255);
+}
+.latestupdate p span{
+    text-decoration: underline rgb(78, 78, 255) 4px;
+}
+
+.dba{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.dba1{
+    border: 0.04rem rgb(104, 104, 104) solid;
+    width: 21rem;
+    height: 4.8rem;
+    padding: 1rem;
+    margin-bottom: 0.7rem;
+}
+.dba1 p{
+    font-size: 1rem;
+    color: gray;
+    font-weight: 300;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+}
+.dba1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: 600;
+    align-self: baseline;
+    margin-top: 0.9rem;
+    cursor: pointer;
+}
+.dba1 a:hover{
+    color: rgb(53, 53, 226);
+}
+.dba1 .newbtn{
+    background-color: lightblue;
+    padding: 0.2rem 0.38rem 0.2rem 0.38rem ;
+    border: 1px rgb(111, 210, 243) solid;
+    border-radius: 4px;
+    margin-left: 4rem;
+    font-size: 0.7rem;
+    color: darkblue;
+}
+.ebtn{
+    background-color: rgb(184, 255, 184);
+    color: green;
+    padding: 0.2rem 0.38rem 0.2rem 0.38rem;
+    border-radius: 4px;
+    margin-left: 4rem;
+    font-size: 0.7rem;
+    border: 1px green solid;
+
+}
+/*adding responsiveness to content*/
+@media screen and (max-width:1290px) {
+    .slide{
+        margin-left: 2rem;
+    }
+    .box1{
+        margin-left: 4rem;
+       
+    }
+    .latestupdate{
+        margin-left: 1.4rem;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .slide{
+        width: 41rem;
+        height: 14rem;
+    }
+    .latestupdate p{
+        font-size: 1.7rem;
+        margin-left: 0.7rem;
+        margin-bottom: 0.3rem;
+    }
+    .dba1{
+        width: 18.7rem;
+        height: 4.9rem;
+        margin-left: 0.4rem;
+        padding-top: 0rem;
+    }
+    .dba1 p{
+        margin-top: 0.7rem;
+        font-size: 1rem;
+    }
+    .dba1 a{
+        font-size: 1rem;
+    }     
+    
+    .box1{
+        width: 30%;
+        margin-left: 1rem;
+    }
+    .view{
+        margin-left: 34rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .content{
+        flex-direction: column;
+    }
+    .box1{
+        order: 3;
+        width: 110vh;
+        margin: auto;
+    }
+    .box2{
+        overflow: visible;
+    }
+    .slide{
+        width: 119vh;
+        margin: auto;
+    }
+    .slide h1{
+        font-size: 1.3rem;
+    }
+    .dba{
+        flex-direction: column;
+    }
+    .dba1{
+        width: 90%;
+        height: 20vh;
+    }
+    .dba1 p{
+        font-size: 1.2rem;
+    }
+    .dba1 a{
+        font-size: 1.4rem;
+        line-break: loose;
+    }
+    .dbu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:810px) {
+    .slide{
+        width: 97vh;
+    }
+    .s1 div h1{
+        font-size: 1.3rem;
+    }
+    .s1 div p{
+        font-size: 0.7rem;
+    }
+    .s1 div button{
+        padding: 0.7rem;
+    }
+    .view{
+        margin-left: 0.4rem;
+        top: 370px;
+    }
+    .latestupdate{
+        margin-bottom: 2rem;
+    }
+    .latestupdate p{
+        font-size: 1.4rem;
+        position: relative;
+        top: 1.8rem;
+    }
+    .dba1 a{
+        font-size: 1.2rem;
+        margin-top: 4rem;
+    }
+    .dba1 p{
+        font-size: 0.9rem;
+        margin-top: -1rem ;
+        margin-bottom: 2.4rem;
+    }
+    
+    
+    .box1{
+        width: 90vh;
+        height: 80vh;
+    }
+}
+@media screen and (max-width:723px) {
+    .slide{
+        width: 37rem;
+    }
+    .dba1{
+        height: 14vh;
+    }
+    .view{
+        top: 280px;
+    }
+    .box1{
+        width: 80vh;
+        height: 80vh;
+    }
+}
+@media screen and (max-width:600px) {
+    .slide{
+        width: 30rem;
+    }
+    .s1{
+        width: 20rem;
+    }
+    .box1{
+        width: 30rem;
+    }
+    .view{
+        top: 260px;
+        font-size: 1rem;
+    }
+    .logo img{
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+    .menue{
+        top: 1.8rem;
+    }
+     .logo .profile{
+        top: 1.8rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .slide{
+        width: 25rem;
+    }
+    .s1 img{
+        width: 10rem;
+    }
+    
+    .latestupdate p{
+        font-size: 1.2rem;
+        top: 1rem;
+    }
+    .latestupdate a{
+        font-size: 1rem;
+    }
+    .dba1 p {
+        font-size: 0.7rem;
+        margin-top: -0.4rem;
+    }
+    .dba1 a{
+        margin: 0;
+    }
+}
+@media screen and (max-width:400px) {
+    .slide{
+        width: 22rem;
+        margin-left: 1.4rem;
+    }
+    .dba1{
+        width: 20rem;
+    }
+    .box1{
+        width: 24rem;
+        margin-left: 1.4rem;
+    }
+}
+/*-------------------lastcontent------------------*/
+
+.d1{
+    width: 20rem;
+    text-align: left;
+    margin-left: 5.9rem;
+    margin-top: 3rem;
+}
+.ltc{
+    display: flex;
+    width: 100%;
+}
+
+.d1 h1{
+    padding-bottom: 1.2rem;
+    text-align: left;
+    position: relative;
+    left: -1rem;
+}
+.d1 span{
+    text-decoration: underline blue 4px;
+}
+.d1 p{
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+}
+.d1 h4{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.2rem;
+}
+.d1 h5{
+    color: gray;
+    word-spacing: 0.34rem;
+}
+.d2{
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+}
+.tpayer{
+    margin: auto;
+    padding: 1rem 0 1.3rem 0 ;
+    background: rgba(0, 102, 255,0.3);
+    width: 38rem;
+    overflow: scroll; 
+    height: 10rem;
+    border-radius: 4px;
+}
+span{
+    text-decoration: underline rgb(78, 78, 255) 4px;
+    margin-left: 1rem;
+}
+.tpayer h1{
+    text-transform: capitalize;
+}
+.tpayer div{
+    background-color: #fff;
+    padding: 1.4rem 1rem 0 1rem;
+    width: 90%;
+    height: 5.8rem;
+    margin: auto;
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 599;
+}
+.sub{
+    width: 30rem;
+    padding: 1rem 1rem 0 3rem;
+    margin-left: 12rem;
+    background-color: rgba(211, 221, 235, 0.49);
+}
+.sub h1{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+.sub p{
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+    word-spacing: 0.49rem;
+}
+
+.sub span{
+    text-decoration: underline blue 4px;
+    text-transform: capitalize;
+}
+.subu{
+    background-color: rgba(199, 212, 250, 0.3);
+    padding: 0 2rem 1rem 0;
+}
+.subu h5{
+    margin-left: 2rem;
+    padding: 3rem 0 2rem 0;
+}
+.sub0{
+    display: flex;
+    padding-left: 4.9rem;
+}
+.sub0 div{
+    padding: 0 1rem 0.3rem 2rem;
+}
+.sub0 div p{
+    font-size: 0.8rem;
+}
+@media screen and (max-width:1249px) {
+    .sub{
+        margin-left: 9rem;
+    }
+    
+}
+@media screen and (max-width:1110px){
+    .sub{
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width:804px){
+    .sub h1{
+        font-size: 1.7rem;
+    }
+    .sub p{
+        font-size: 1rem;
+    }
+    .sub0 img{
+        width: 70px;
+        height: 70px;
+    }
+    .sub0{
+        padding-left: 2rem;
+    }
+    .d1{
+        margin-left: 1.8rem;
+    }
+}
+@media screen and (max-width:698px) {
+    .d1 h1{
+        font-size: 1.2rem;
+    }
+    .d1 h2{
+        font-size: 1rem;
+    }
+    .tpayer h1{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:575px) {
+    .ltc{
+        display: block;
+    }
+    .d1{
+        display: flex;
+    }
+    .d1 h1{
+        font-size: 1rem;
+    }
+    .d1 div{
+        margin-left: 3rem;
+    }
+    .tpayer{
+        width: 90%;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width:590px){
+    .sub0{
+        padding-left: 1rem;
+    }
+    .sub h1{
+        font-size: 1.2rem;
+    }
+    .sub p{
+        font-size: 0.9rem;
+        word-spacing: 0.3rem;
+    }
+    .sub{
+        padding-left: 0.3rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .sub0{
+        flex-direction: column;
+        width: 10rem;
+    }
+    .sub h1{
+        font-size: 1.4rem;
+    }
+    .sub p{
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width:370px) {
+    .sub{
+        width: 80rem;
+        margin-left: 1rem;
+    }
+    .sub p{
+        font-size: 0.7rem;
+    }
+    .sub h1{
+        font-size: 1rem;
+    }
+    .subu{
+        padding-right: 1rem;
+    }
+    .subu div h2{
+        font-size: 0.8rem;
+    }
+    .subu div p{
+        font-size: 0.7rem;
+    }
+    .subu div img{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media screen and (min-height:790px) {
+    .box1{
+        height: 70vh;
+    }
+    
+}
+
+/*footer styling*/
+footer{
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.f1{
+    margin-top: 4rem;
+}
+.f1 h3{
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.f1 a{
+    display: block;
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.follow{
+    color: #fff;
+    display: flex;
+    padding: 2rem 0 3.4rem 4.9rem;
+    font-size: 1.4rem;
+}
+.follow img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 49%;
+    margin-left: 1rem;
+    position: relative;
+    bottom: 0.49rem;
+}
+.follow h5{
+    margin-right: 1.4rem;
+}
+.text{
+    display: flex;
+    color: rgb(212, 212, 212);
+    text-align: right;
+    flex-direction: column;
+    padding-right: 1rem;
+    font-weight: 100;
+    width: 30rem;
+    margin-left: 52rem;
+    margin-top: 2rem;
+}
+.logo2 img{
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 49%;
+    position: relative;
+    bottom: 4rem;
+    left: 3rem;
+}
+@media screen and (max-width:1330px) {
+    .text{
+        margin-left: 40rem;
+    }
+    
+}
+@media screen and (max-width:1147px) {
+    .text{
+        margin-left: 37rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    .text{
+        margin-left: 30rem;
+    }
+    
+}
+@media screen and (max-width:977px) {
+    .text{
+        margin-left: 24rem;
+    }
+    
+}
+@media screen and (max-width:882px) {
+    .text{
+        margin-left: 17rem;
+    }
+    
+}
+@media screen and (max-width:770px) {
+    .text{
+        margin-left: 10rem;
+    }
+    
+}
+@media screen and (max-width:653px) {
+    .text{
+        margin-left: 7rem;
+        font-size: 0.7rem;
+    }
+    
+}
+@media screen and (max-width:605px) {
+    .text{
+        margin-left: 4rem;
+    }
+    .logo2 img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .f1 h3{
+        font-size: 0.89rem;
+    }
+    .f1 a{
+        font-size: 0.57rem;
+    }
+    .follow{
+        font-size: 1rem;
+    }
+    .follow img{
+        width: 1.4rem;
+        height: 1.4rem;
+        left: 0rem;
+    }
+}
+@media screen and (max-width:553px){
+    .text{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:519px){
+    .text{
+        text-align: left;
+    }
+    .logo2 img{
+        bottom: 0rem ;
+        left: 14rem;
+        margin-top: 3rem;
+    }
+    hr{
+        display: none;
+    }
+}
